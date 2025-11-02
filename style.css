@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Recursive:wght@300..1000&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --cor-background: #232830;
+    --cor-texto: #FFFFFF;
+    --cor-logo: #FF7575;
+    --cor-texto-card: #0F1217;
+    --cor-twitter-blue: #0d87d3;
+    --cor-bar-content: #909090;
+}
+
+html {
+  overflow:   scroll;
+}
+
+/* scrollbar transparente */ 
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+body {
+    background-color: var(--cor-background);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#container {
+    display: block;
+    text-align: center;
+    margin: 5% 12% 5% 12%;  
+}   
+
+/* barra de navegação */
+
+#container .nav-ul {
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 70px;
+    gap: 50px;
+}
+
+#container .nav-ul a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cor-texto);
+}
+
+#container .nav-ul .writings-left-nav {
+    margin-right: auto;
+}
+
+#container .nav-ul .writings-left-nav a {
+    font-size: 24px;
+}
+
+#container .logo h1 {
+    font-family: "Recursive", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--cor-logo);
+    font-size: 64px;
+}
+
+#container .logo h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--cor-texto);
+    font-size: 24px;
+    margin-top: -20px;
+    padding-bottom: 40px;
+}
+
+#container .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: strech;
+    margin: 0 auto;
+}
+
+#container .grid .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 25px;
+    background-color: var(--cor-texto);
+    margin: 1px;
+    padding: 20px;
+    text-align: justify;
+    color: var(--cor-texto-card);
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+}
+
+#container .grid .cards img {
+    width: 100%;
+}
+
+#container .grid .cards h1 {
+    font-size: 15px;
+}
+
+#container .grid .cards p {
+    font-size: 13px;
+}
+
+#container .grid .cards .card-bottom {
+    color: var(--cor-texto-card);
+    margin-top: auto;
+}
+
+#container .footer-ul {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    color: var(--cor-texto);
+}
+
+#container .left-footer {
+    font-size: 26px;
+}
+
+#container #byme-left-footer {
+    font-size: 16px;
+    background-color: var(--cor-twitter-blue);
+    border: 7px solid var(--cor-twitter-blue);
+    border-radius: 7%; 
+}
+
+#container .follow-right-footer {
+    margin-left: auto;
+    font-size: 16px;
+}
+
+.linha-div {
+    width: 100%;
+    margin-left: 0;
+    margin-left: 0;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+}
+
+#container .nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-bar-content);
+    font-family: "Recursive", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0 0 60px 0;
+    gap: 40px;    
+}
+
+#container .nav-list .image-bar {
+    display: flex;
+    margin: 0;
+    gap: 10px;
+}
+
+#container .nav-list .image-bar .block-bar {
+    display: flex;
+    width: 20px;
+    height: auto;
+}
+
+#container .nav-list .image-bar .list-bar {
+    display: flex;
+    width: 20px;
+    height: auto;
+}
+
+#container .page-navigator {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+    font-family: "Recursive", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--cor-bar-content);
+}
+
+/* 
+Fontes utilizadas:
+
+Header
+- Poppins, 400, regular, 30px/24px
+
+Título
+- Recursive, 400, italico, 71px
+
+Subtítulo
+- Poppins, 400, regular, 29px
+
+Footer
+- Source Sans Pro, 600, semibold, 30px
+
+Conteúdo (cards/posts)
+- Poppins, 400, regular, 16px (subtítulo)
+- Poppins, 600, semibold, 19px (título)
+
+*/
